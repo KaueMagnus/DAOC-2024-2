@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav id="menu">
+            <ul>
+                <li><a id="link" href="#" onclick="navigate('home')">Home</a></li>
+                <li><a id="link" href="#" onclick="navigate('sobre')">Sobre</a></li>
+                <li><a id="link" href="#" onclick="navigate('servicos')">Serviços</a></li>
+                <li><a id="link" href="#" onclick="navigate('contato')">Contato</a></li>
+            </ul>
+        </nav>
+        <button id="menu-toggle">Menu</button>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Este é um exemplo de layout usando html, css e javascripto</p>
+        </section>
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>Este é um exemplo de layout usando html, css e javascripto</p>
+        </section>
+        <section id="servicos">
+            <h2>Servicos</h2>
+            <p>Este é um exemplo de layout usando html, css e javascripto</p>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <form id="formContato">
+                <label for="nome">Nome</label>
+                <br>
+                <input id="nome" type="text"  name="nome" placeholder="Insira seu nome">
+                <br> <br>
+                <label for="email">Email</label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="Insira seu email">
+                <br> <br>
+                <label for="phone">Telefone</label>
+                <br>
+                <input id="phone" type="phone" name="phone" placeholder="Insira seu telefone">
+                <br> <br>
+                <button type="button" onclick="submitForm()">Enviar</button>
+            </form>
+            <div id="tabelaContato">
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2024 Meu site</p>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
