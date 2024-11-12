@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="http://"></a></li>
+                <li><a href="http://"></a></li>
+                <li><a href="http://"></a></li>
+                <li><a href="http://"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <button onclick="this.style.background = 'red' ">Oi</button>
+
+</body>
+
+    <script>
+      
+        console.log(MinhaListaDePessoasComponente(data))
+
+        const data = [
+            {nome: "Daniel", idade: 25},
+            {nome: "Danie1", idade: 22},
+            {nome: "Danie2", idade: 23}
+        ]
+
+        function MinhaListaDePessoasComponente(data) {
+            return data.map(item => {
+                return (
+                    '<li>${item.nome}</li>'
+                )
+            }).join("")
+        }
+
+    </script>
+</html>
